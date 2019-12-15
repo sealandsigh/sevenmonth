@@ -4,7 +4,7 @@ ord('a')
 id('a')
 print('work')
 
-mood = True
+username = input('please input username')
+password = input('please input password')
 
-if mood :
-    print('mood')
+print(username,password)
