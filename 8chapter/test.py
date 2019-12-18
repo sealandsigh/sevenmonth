@@ -5,3 +5,4 @@ def damage(skill1,skill2=1):
 
 skill_1,skill_2 = damage(3,skill2=3)
 print(skill_1,skill_2)
+print('签卡')
