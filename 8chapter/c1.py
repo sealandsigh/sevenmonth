@@ -1,9 +1,11 @@
-class Student():
+from test1 import Human
+
+class Student(Human):
     sum = 0
 
-    def __init__(self,name,age):
-        self.name = name
-        self.age = age
+    def __init__(self,school,name,age):
+        self.school = school
+        super(Student,self).__init__(name,age)
         #self.__class__.sum += 1
 
         #print('当前班级人数:'+ str(self.__class__.sum))
@@ -16,9 +18,5 @@ class Student():
         cls.sum += 1
         print(cls.sum)
 
-student1 = Student('zhujiajun',18)
-student2 = Student('zjj',18)
-student3 = Student('zjjj',18)
-Student.plus_sum()
-Student.plus_sum()
-Student.plus_sum()
+student1 = Student('人民路小学','zhujiajun',18)
+student1.get_name()
