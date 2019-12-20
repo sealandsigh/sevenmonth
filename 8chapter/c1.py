@@ -11,6 +11,7 @@ class Student(Human):
         #print('当前班级人数:'+ str(self.__class__.sum))
 
     def do_homework(self):
+        super(Student,self).do_homework()
         print('dohomework')
 
     @classmethod
@@ -19,4 +20,4 @@ class Student(Human):
         print(cls.sum)
 
 student1 = Student('人民路小学','zhujiajun',18)
-student1.get_name()
+student1.do_homework()
