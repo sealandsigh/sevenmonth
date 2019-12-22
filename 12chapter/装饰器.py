@@ -5,13 +5,20 @@
 import time
 
 def zhuangshiqi(func):
-    def wrapper():
+    def wrapper(*args,**kwargs):
         print(time.time())
-        func()
+        func(*args,**kwargs)
     return wrapper
 
 @zhuangshiqi
-def a():
-    print('this is a')
+def a(func_name):
+    print('this is a'+func_name)
 
-a()
+# def zhuangshiqi1(func):
+#     print(time.time())
+#     return func
+
+# f = zhuangshiqi1(a)
+# f()
+
+a('nihao')
