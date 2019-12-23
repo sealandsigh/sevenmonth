@@ -22,3 +22,4 @@ def a(func_name):
 # f()
 
 a('nihao')
+a('nihao')
