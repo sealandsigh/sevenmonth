@@ -1,2 +1,6 @@
 print('签卡')
 print('你好')
+myname = "{} {} zhujiajun".format('my','name')
+print(myname)
+myname1 = "{1} {0} is zhujiajun".format('name','my')
+print(myname1)
